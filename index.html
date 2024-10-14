@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
@@ -23,12 +26,45 @@
             <a href="">Shop</a>
             <a href="">We, Robot</a>
         </nav>
-        <nav class="right desktop">
-                <a href=""><i class="bi bi-question-circle"></i></a>
-                <a href=""><i class="bi bi-globe2"></i></a>
-                <a href=""><i class="bi bi-person-circle"></i></a>
+        <nav class="right">
+                <a href="" class="desktop"><i class="bi bi-question-circle"></i></a>
+                <a href="" class="desktop"><i class="bi bi-globe2"></i></a>
+                <a href="" class="desktop"><i class="bi bi-person-circle"></i></a>
                 <a href="" class="menu">Menu</a>
         </nav>
     </header>
+    <section class="hero">
+        <div class="carousel-container" id="carousel">
+            <div class="carousel-item active" style="background-image: url('img/hero/Homepage-We-Robot-Hero-Desktop.png');">
+                <div class="carousel-caption robot">
+                    <br>WE, </br> ROBOT</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('img/hero/Homepage-APR-Promo-Hero-Desktop.png');">
+                <div class="carousel-caption">
+                    <h5>APR Promo</h5>
+                    <p>Explore our latest APR promotions for electric vehicles.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="carousel-dots" id="dots">
+            <div class="dot active" onclick="showSlide(0)"></div>
+            <div class="dot" onclick="showSlide(1)"></div>
+        </div>
+    </section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
