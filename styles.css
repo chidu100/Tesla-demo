@@ -132,8 +132,34 @@ header nav.right {
 
 .apr {
     position:absolute;
-    bottom: 220px;
+    bottom: 210px;
     font-size: 40px;
     max-width: 550px;
     font-weight: bold;
+}
+
+.lowercase {
+    text-transform: lowercase;
+    font-weight: 400;
+}
+
+.learn-more-btn {
+    position: absolute;
+    bottom: 135px;
+    left: 70px;
+    background-color: white;
+    color: #171a20;
+    font-size: 18px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 100px;
+    z-index: 10; /* Ensure it's above other elements */
+    transition: background-color 0.3s ease; /* Add hover effect */
+}
+
+/* Add a hover effect for better user interaction */
+.learn-more-btn:hover {
+    background-color: #f0f0f0;
 }
