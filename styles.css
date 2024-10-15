@@ -94,14 +94,14 @@ header nav.right {
             color: white;
             padding: 15px 20px;
             border-radius: 5px; 
-            max-width: 300px; 
+            max-width: 800px; 
         }
 
         /* Circle buttons styling */
         .carousel-dots {
             text-align: center; 
             position: absolute;
-            bottom: 44%; 
+            bottom: 37%; 
             left: 5%; 
             transform: translateX(-50%); 
             margin-top: 20px; 
@@ -120,11 +120,20 @@ header nav.right {
         .dot.active {
             background: grey; 
         }
-    
-.robot {
-    font-family: "Geo", sans-serif;
+
+   .robot-svg svg {
+    position: absolute;
+    width: 340px; /* Adjust width as needed */
+    height: auto;
+    fill: white; /* Ensure it matches the design */
+    margin: 0 auto; /* Center the SVG */
+}
+
+
+.apr {
+    position:absolute;
+    bottom: 220px;
     font-size: 40px;
-    font-weight: 900;
-    font-style: normal;
-    margin: -5px 0;
+    max-width: 550px;
+    font-weight: bold;
 }
