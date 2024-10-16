@@ -143,7 +143,7 @@ header nav.right {
     font-weight: 400;
 }
 
-.learn-more-btn {
+.learn-more-btn, .order-btn {
     position: absolute;
     bottom: 135px;
     left: 70px;
@@ -162,4 +162,24 @@ header nav.right {
 /* Add a hover effect for better user interaction */
 .learn-more-btn:hover {
     background-color: #f0f0f0;
+}
+
+
+.learn-more-btn {
+    bottom: 135px;
+    left: 70px;
+}
+
+.order-btn {
+    bottom: -50px;
+    left: 20px;
+}
+
+.order-btn:nth-child(2) {
+    left: 230px; /* Adjust this value for spacing between buttons */
+}
+
+.learn-more-btn, .apr a{
+    text-decoration: none;
+    color: #171a20;
 }
