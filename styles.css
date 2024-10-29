@@ -7,6 +7,7 @@
 body{
     color: #171a20;
     font-family: "M PLUS 1", serif;
+    overflow-x: hidden;
 }
 
 .desktop {
@@ -20,14 +21,15 @@ body{
 }
 
 header {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
     position: sticky;
     top: 0;
-    z-index: 2;
-    width: 100%;
+    background-color: #fff;
+    z-index: 10;
 }
+
 .logo {
     height: 12px;
     width: 100px;
@@ -184,15 +186,14 @@ header nav.right {
     color: #171a20;
 }
 
-.adjust {
-    border: 50px white;
-}
-
 /* Next section container with background image */
 .next-section {
+    margin: 50px auto; /* Centers the section */
+    padding: 20px;
+    border-radius: 20px;
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 90%;
+    height: 90vh;
     background-image: url('img/next-section/Homepage-Model-Y-Desktop-US-v2.png');
     background-size: cover;
     background-position: center;
@@ -208,7 +209,7 @@ header nav.right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 30px;
+    padding: 10px;
     color: white;
     text-align: center;
 }
@@ -218,7 +219,7 @@ header nav.right {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 /* Text styling */
@@ -236,11 +237,12 @@ header nav.right {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 /* Button styles */
 .btn {
+    width: 300px;
     display: inline-block;
     padding: 12px 30px;
     font-size: 18px;
@@ -251,7 +253,7 @@ header nav.right {
 }
 
 .order-now {
-    background-color: blue;
+    background-color: rgb(82, 82, 226);
     color: white;
 }
 
@@ -259,3 +261,4 @@ header nav.right {
     background-color: white;
     color: black;
 }
+
