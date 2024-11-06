@@ -1,3 +1,16 @@
+const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+        // If active class is added, show the mobile menu, otherwise hide it
+        if (mobileMenu.classList.contains('active')) {
+            mobileMenu.style.display = 'block';
+        } else {
+            mobileMenu.style.display = 'none';
+        }
+    });
+
 const slides = document.querySelectorAll('.carousel-item');
         const dots = document.querySelectorAll('.dot');
         let currentIndex = 0;

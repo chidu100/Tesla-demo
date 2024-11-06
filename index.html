@@ -30,8 +30,19 @@
                 <a href="" class="desktop"><i class="bi bi-question-circle"></i></a>
                 <a href="" class="desktop"><i class="bi bi-globe2"></i></a>
                 <a href="" class="desktop"><i class="bi bi-person-circle"></i></a>
-                <a href="" class="menu">Menu</a>
-        </nav>
+                <a href="javascript:void(0);" class="menu" id="menuToggle">Menu</a>
+            </nav>
+        </header>
+        
+        <!-- Mobile menu (hidden by default) -->
+        <div id="mobileMenu" class="mobile-menu">
+            <a href="#">Vehicles</a>
+            <a href="#">Energy</a>
+            <a href="#">Charging</a>
+            <a href="#">Discover</a>
+            <a href="#">Shop</a>
+            <a href="#">We, Robot</a>
+        </div>
     </header>
     <section class="hero">
         <div class="carousel-container" id="carousel">
@@ -125,11 +136,139 @@
         </div>
       </div>
     </section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
 
+    <section class="cybertruck-section">
+        <div class="cybertruck-content">
+            <div class="cybertruck-text">
+                <img src="img/cybertruck/tesla-cybertruck.svg" alt="Tesla Cybertruck" />
+            </div>
+            <div class="cybertruck-buttons">
+                <button class="truck-order-now-btn">Order Now</button>
+                <button class="truck-demo-drive-btn">Demo Drive</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="solar-section">
+        <div class="models-content">
+            <!-- Top text with Model S info -->
+            <div class="models-text">
+                <h2>Solar Panels</h2>
+                <p>Schedule a Virtual Consultation</p>
+            </div>
+    
+            <!-- Bottom buttons for actions -->
+            <div class="models-buttons">
+                <a href="#" class="btn order-now">Order Now</a>
+                <a href="#" class="btn demo-drive">Demo Drive</a>
+            </div>
+          </div>
+    </section>
+    <section class="solar-section-2">
+        <div class="models-content">
+            <!-- Top text with Model S info -->
+            <div class="models-text">
+                <h2>Solar Panels</h2>
+                <p>Schedule a Virtual Consultation</p>
+            </div>
+    
+            <!-- Bottom buttons for actions -->
+            <div class="models-buttons">
+                <a href="#" class="btn order-now">Order Now</a>
+                <a href="#" class="btn demo-drive">Demo Drive</a>
+            </div>
+          </div>
+    </section>
+    <section class="powerwall">
+        <div class="models-content">
+            <!-- Top text with Model S info -->
+            <div class="models-text">
+                <h2>Powerwall</h2>
+            </div>
+    
+            <!-- Bottom buttons for actions -->
+            <div class="models-buttons">
+                <a href="#" class="btn order-now">Order Now</a>
+                <a href="#" class="btn demo-drive">Demo Drive</a>
+            </div>
+          </div>
+    </section>
+    <section class="accessories">
+        <div class="models-content">
+            <!-- Top text with Model S info -->
+            <div class="models-text">
+                <h2>Accessories</h2>
+            </div>
+    
+            <!-- Bottom buttons for actions -->
+            <div class="models-buttons">
+                <a href="#" class="btn order-now">Shop Now</a>
+            </div>
+          </div>
+    </section>
+
+    <section data-gtm-key="tesla-hero-react-149" class="" id="tesla_hero_react_149">
+        <div class="dx-hero" id="react-data-tesla_hero_react_149" data-component-status="initialized">
+            <div>
+                <section class="dx-hero__section dx-hero__product dx-hero--bottom-left">
+                    <div class="dx-hero__slides">
+                        <div class="dx-hero__slide-1 dx-hero__slide--active dx-hero__slide">
+                            <div class="tcl-react-video tds-video-player tcl-react-media dx-hero__media">
+                                <div role="none" class="tds-video-player__overlay"></div>
+                                <video preload="auto" poster="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-We-Are-Tesla-Desktop-Poster.png"
+                                       autoplay="" playsinline="" loop="" class="tcl-react-media__asset" src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/Homepage-We-Are-Tesla-Desktop.mp4">
+                                    <source src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/Homepage-We-Are-Tesla-Desktop.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="dx-hero__content-container">
+                                <div class="dx-hero__content hero">
+                                    <div class="dx-hero__heading-container">
+                                        <div class="dx-hero__heading1 tds-text--h1">We Are Tesla</div>
+                                    </div>
+                                    <div class="dx-hero__cta-container">
+                                        <div class="dx-hero__cta">
+                                            <a type="button" class="dx-hero__cta1 tds-btn tds-btn--tertiary" href="/careers/search/?department=ai-robotics" target="_self" 
+                                               data-gtm-event="drawer-interaction" data-gtm-interaction="join-tesla" data-gtm-drawer="we-are-tesla" previewlistener="true">
+                                               Join Tesla
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+    
+    <section id="leasing-info">
+        <div class="info-container">
+            <div class="leasing-info">
+                <p><span class="lease-number">1</span> Monthly lease payment excludes taxes and fees, is based on $44,990 Model Y Long Range Rear-Wheel Drive purchase price and is subject to change at any time. Requires $2,999 down with 36 months and 10,000 miles. Subject to credit approval and available in select U.S. states. <span class="terms">Terms apply.</span></p>
+    
+                <p><span class="lease-number">2</span> Monthly lease payment excludes taxes and fees, is based on $42,490 Model 3 Long Range Rear-Wheel Drive purchase price and is subject to change at any time. Requires $2,999 down with 36 months and 10,000 miles. Subject to credit approval and available in select U.S. states. <span class="terms">Terms apply.</span></p>
+    
+                <p><span class="lease-number">3</span> Price before estimated savings is $81,630, including Destination and Order Fees, but excluding taxes and other fees. Subject to change. Vehicle shown has upgrades that will increase the price. Estimated savings includes $6,500 in <span class="gas-savings"> gas savings</span> estimated over five years, the $7,500 Federal Tax Credit and state incentives, available to eligible buyers and subject to MSRP caps. Not all vehicles, customers or finance options will be eligible. <span class="terms">Terms apply.</span></p>
+    
+                <p><span class="lease-number">4</span> Price before estimated savings is $76,630, including Destination and Order Fees, but excluding taxes and other fees. Subject to change. Vehicle shown has upgrades that will increase the price. Estimated savings includes $6,500 in <span class="gas-savings"> gas savings</span> estimated over five years and state incentives, available to eligible buyers and subject to MSRP caps. Not all vehicles, customers or finance options will be eligible. <span class="terms">Terms apply.</span></p>
+            </div>
+    
+    
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#">Tesla © 2024</a></li>
+                    <li><a href="#">Privacy & Legal</a></li>
+                    <li><a href="#">Vehicle Recalls</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Get Updates</a></li>
+                    <li><a href="#">Locations</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
 
 
     <script src="script.js"></script>

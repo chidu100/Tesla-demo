@@ -10,6 +10,12 @@ body{
     overflow-x: hidden;
 }
 
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
+
 .desktop {
     display: none;
 }
@@ -57,12 +63,80 @@ header nav.right {
     display: none;
 }
 
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 768px) {
     .menu {
         display: initial;
     }
 }
 
+@media (max-width: 768px) {
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .mobile-menu a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .mobile-menu a:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px; /* Reduced padding on smaller screens */
+    }
+
+    header nav {
+        display: block; /* Make navigation stack vertically on smaller screens */
+    }
+
+    header nav a {
+        padding: 8px 12px; /* Adjust link padding */
+    }
+
+    .menu {
+        display: initial;
+    }
+
+    .logo {
+        width: 80px; /* Resize logo for mobile */
+    }
+
+    .robot-svg svg {
+        width: 250px; /* Resize robot SVG for smaller screens */
+    }
+}
 
         /* Carousel container */
         .carousel-container {
@@ -121,6 +195,19 @@ header nav.right {
 
         .dot.active {
             background: grey; 
+        }
+
+        @media (max-width: 768px) {
+            .carousel-container {
+                height: 70vh; /* Reduce height on smaller screens */
+            }
+        
+            .carousel-item {
+                height: 70vh; /* Ensure carousel items are resized proportionally */
+            }
+            .dot {
+                display: none; /* Hide dots on smaller screens */
+            }
         }
 
    .robot-svg svg {
@@ -307,4 +394,436 @@ header nav.right {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* cybertruck */
+.cybertruck-section {
+    position: relative;
+    margin: 50px auto;
+    border-radius: 20px;
+    background-image: url('img/cybertruck/Homepage-Cybertruck-Desktop-v3.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    height: 90vh;
+    width: 90%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.cybertruck-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.cybertruck-text img {
+    width: 50%; /* Adjust size as needed */
+    max-width: 500px;
+    margin: 40px auto 0;
+}
+
+.cybertruck-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px; /* Adjust to place buttons near the bottom */
+}
+
+.truck-order-now-btn,
+.truck-demo-drive-btn {
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 300px;
+    text-transform: uppercase;
+}
+
+.truck-order-now-btn:hover,
+.truck-demo-drive-btn:hover {
+    background-color: rgb(25, 25, 26);
+}
+
+.truck-order-now-btn {
+    border-top: 3px solid gray;
+    background-color: rgb(15, 15, 15);
+    color: rgb(104, 97, 97);
+}
+
+.truck-demo-drive-btn {
+    background-color: rgb(15, 15, 15);
+    color: rgb(104, 97, 97);
+}
+
+.solar-section {
+    position: relative;
+    margin: -30px auto;
+    border-radius: 20px;
+    background-image: url('img/solar/Homepage-Solar-Panel-Desktop-US.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    height: 90vh;
+    width: 90%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.solar-section-2 {
+    position: relative;
+    margin: 50px auto;
+    border-radius: 20px;
+    background-image: url('img/solar/Homepage-SolarRoof-Desktop-US.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    height: 90vh;
+    width: 90%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.powerwall {
+    position: relative;
+    margin: -30px auto;
+    border-radius: 20px;
+    background-image: url('img/powerwall/Homepage-Powerwall-Desktop-US.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    height: 90vh;
+    width: 90%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.accessories {
+    position: relative;
+    margin: 50px auto;
+    border-radius: 20px;
+    background-image: url('img/accessories/Homepage-Accessories-Desktop-US.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    height: 90vh;
+    width: 90%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .next-section {
+        height: 70vh; /* Reduce section height */
+    }
+
+    .next-section-content {
+        padding: 15px; /* Adjust padding */
+    }
+
+    .next-section-text h2 {
+        font-size: 36px; /* Smaller text for headings */
+    }
+
+    .next-section-text p {
+        font-size: 18px; /* Adjust paragraph font size */
+    }
+
+    .next-section-buttons {
+        gap: 10px; /* Adjust button spacing */
+    }
+}
+
+@media (max-width: 768px) {
+    .model-3,
+    .model-x,
+    .model-s {
+        height: 70vh; /* Reduce section height */
+    }
+
+    .model-3 .model-text h2,
+    .model-x .model-text h2,
+    .model-s .model-text h2 {
+        font-size: 36px; /* Reduce heading font size */
+    }
+
+    .model-3 .model-text p,
+    .model-x .model-text p,
+    .model-s .model-text p {
+        font-size: 18px; /* Adjust paragraph font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .cybertruck-section {
+        height: 70vh; /* Adjust section height */
+    }
+
+    .cybertruck-content {
+        padding: 15px; /* Adjust padding */
+    }
+
+    .cybertruck-buttons {
+        gap: 10px; /* Reduce button gap */
+    }
+
+    .truck-order-now-btn,
+    .truck-demo-drive-btn {
+        width: 250px; /* Resize buttons for mobile */
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .cybertruck-text img {
+        width: 80%; /* Resize image */
+    }
+}
+
+@media (max-width: 768px) {
+    .solar-section,
+    .solar-section-2 {
+        height: 70vh; /* Adjust height for mobile */
+    }
+
+    .solar-section .solar-content,
+    .solar-section-2 .solar-content {
+        padding: 15px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .powerwall {
+        height: 70vh; /* Adjust section height */
+    }
+
+    .powerwall .content {
+        padding: 15px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .accessories {
+        height: 70vh; /* Adjust section height */
+    }
+
+    .accessories .content {
+        padding: 15px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .learn-more-btn,
+    .order-btn {
+        font-size: 16px; /* Smaller font size for buttons */
+        padding: 10px 20px; /* Adjust button padding */
+    }
+
+    .learn-more-btn {
+        bottom: 100px; /* Adjust button positioning */
+    }
+
+    .order-btn {
+        bottom: -80px; /* Adjust button positioning */
+    }
+}
+
+/* Section background and layout */
+#tesla_hero_react_149 {
+    position: relative;
+    width: 90%;  /* Reduced width to 90% */
+    height: 90vh;  /* Reduced height to 90% of the viewport */
+    margin: -30px auto; /* Center the section horizontally */
+    border-radius: 15px; /* Add rounded corners */
+    overflow: hidden;  /* Ensure the video doesn't overflow */
+}
+
+/* Video styling */
+.tcl-react-video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.tcl-react-media__asset {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Heading styling */
+.dx-hero__heading1 {
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.tds-btn--tertiary {
+    background-color: #fff;
+    color: #171a20;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.tds-btn--tertiary:hover {
+    background-color: #171a20;
+    color: white;
+}
+
+/* Content container */
+.dx-hero__content-container {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    z-index: 2;
+}
+
+/* Ensuring the video overlay is clickable */
+.tds-video-player__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    #tesla_hero_react_149 {
+        height: 60vh; /* Reduced height for mobile */
+    }
+
+    .tcl-react-video {
+        height: 60vh; /* Adjust video height */
+    }
+
+    .dx-hero__heading1 {
+        font-size: 2rem; /* Adjust heading font size */
+    }
+
+    .tds-btn--tertiary {
+        padding: 12px 30px; /* Adjust button padding */
+        font-size: 1rem; /* Adjust button font size */
+    }
+
+    .tds-video-player__overlay {
+        background: rgba(0, 0, 0, 0.6); /* Darker overlay */
+    }
+}
+
+#leasing-info {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.info-container {
+    max-width: 850px;  /* Keeps the content from stretching too wide */
+    margin: 0 auto;    /* Center the container */
+    padding: 20px;
+}
+
+.leasing-info {
+    margin-bottom: 30px;
+}
+
+.leasing-info p {
+    font-size: 14px;  /* Reduced font size */
+    line-height: 1.6;
+    color: #4d4d4d;  /* Grey text color */
+    max-width: 800px;
+    margin: 0 auto 15px; /* Centers the paragraph and adds spacing */
+}
+
+.lease-number {
+    font-size: 9px;  /* Reduced font size for the numbering */
+    color: #4d4d4d;  /* Grey color for the number */
+}
+
+@media (max-width: 768px) {
+    #leasing-info {
+        padding: 20px 0; /* Reduce padding for mobile */
+    }
+
+    .info-container {
+        padding: 10px; /* Adjust padding */
+    }
+
+    .leasing-info p {
+        font-size: 12px; /* Smaller text for leasing info */
+        line-height: 1.4; /* Adjust line height */
+    }
+
+    .lease-number {
+        font-size: 8px; /* Adjust number size */
+    }
+}
+
+.footer-menu {
+    font-size: 14px;
+    color: #4d4d4d;
+}
+
+.footer-menu p {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-menu ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-menu ul li a {
+    text-decoration: none;
+    color: #4d4d4d;
+    font-weight: normal;
+}
+
+.gas-savings {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #555;  /* Darker grey for the gas savings */
+}
+
+.terms {
+    font-weight: bold;
+    color: #242323;  /* Darker grey for the terms */
+}
+
+@media (max-width: 768px) {
+    .footer-menu {
+        font-size: 12px; /* Smaller font size */
+    }
+
+    .footer-menu ul li {
+        display: block; /* Stack items vertically */
+        margin: 10px 0;
+    }
+
+    .footer-menu ul li a {
+        font-size: 12px; /* Adjust link size */
+    }
 }
